@@ -1,0 +1,103 @@
+
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.horario{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.buscadores {
+     display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.buscadores input{
+    align-self: center;
+
+}
+.turno_busqueda-container{
+    display: flex;
+    width: 200px;
+    height: 180px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.button-filtrar{
+  background-color: #7fafd9; /* Cambia el color de fondo del botón */
+  border: 2px solid #7fafd9; /* Cambia el color del borde del botón */
+  border-radius: 5px; /* Hace que el botón sea redondeado */
+  color: #ffffff; /* Cambia el color del texto del botón */
+  padding: 5px ; /* Ajusta el espaciado interno del botón según sea necesario */
+  font-size: 14px; /* Cambia el tamaño del texto del botón */
+  font-weight: bold; 
+  width: 100px;
+}
+
+/* Estilo cuando el mouse pasa por encima del botón */
+.button-filtrar:hover {
+background-color: #3a84c5;
+}
+
+.no-resize-textarea {
+    resize: none;
+}
+.descripcion-header {
+    margin-top: 0; /* Elimina el margen superior */
+}
+.container-cantidad{
+  width: 50px;   
+  margin: 0 auto; /* Centra horizontalmente */
+  display: block;
+}
+
+
+.form_container{
+    width: 30%;
+}
+
+@media screen and ( max-width: 1000px ){
+    .form_container {
+        width: 45%;
+    }
+
+}
+
+@media screen and ( max-width: 700px){
+    .form_container {
+        width: 65%;
+    }
+    
+}
+
+.buttons button:nth-child(1){
+    border:1px solid #8E24AA !important;
+    color:#8E24AA;
+    height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+    border:1px solid #8E24AA !important;
+    color:#fff;
+    height:40px;
+    background-color:#8E24AA;
+}
+
+.buttons button:nth-child(2){
+    border:1px solid #8E24AA !important;
+    background-color:#8E24AA;
+    color:#fff;
+     height:40px;
+}

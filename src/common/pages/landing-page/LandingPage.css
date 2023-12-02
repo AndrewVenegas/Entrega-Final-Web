@@ -1,0 +1,139 @@
+/* General */
+body {
+    font-family: sans-serif;
+}
+
+/* Titulos */
+.h1-landing {
+    color: floralwhite;
+    text-shadow: 1px 1px 1px grey;
+    font-size: 42px;
+}
+
+.h2-landing {
+    color: floralwhite;
+    text-shadow: 1px 1px 1px grey;
+}
+
+/* Secciones */
+.section-landing {
+    padding: 3rem 0;
+    margin: 1rem 0;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    opacity: 80%;
+}
+
+.intermediate-section {
+    padding: 3rem 0;
+    margin: 1rem 0;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    opacity: 80%;}
+
+.sub-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    align-items: center;
+    justify-items: center;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    opacity: 80%;
+
+}
+
+.sub-intermediate-section {
+    padding: 3rem 0;
+    margin: 1rem 0;
+    background-color: floralwhite;
+    opacity: 100%;
+    border-radius: 10px;
+    display: grid; 
+    width: 50%;
+    text-align: center;
+}
+
+.div-background-image {
+    background-image: url(images/autos-carretera.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 30rem;
+}
+
+/* Fuentes */
+@font-face {
+    font-family: 'fredoka';
+    src: url('/fonts/fredoka.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos dinamicos */
+
+/* Entrada derecha */
+.slide-in-right {
+    animation-duration: 2s;
+    animation-name: slideinright;
+}
+
+@keyframes slideinright {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* Entrada izquierda */
+.slide-in-left {
+    animation-duration: 2s;
+    animation-name: slideinleft;
+}
+
+@keyframes slideinleft {
+    from {
+        margin-left: -100%;
+        margin-right: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+/* Auto */
+.car {
+    display: inline-block;
+}
+
+.animateCar {
+    animation-duration: 10s;
+    animation-name: animate-car;
+}
+
+@keyframes animate-car {
+    0% {
+        transform: scale(1) rotate(10deg);
+    }
+    5% {
+        transform: scale(1.25) rotate(-15deg);
+    }
+    10% {
+        transform: scale(1.5) rotate(5deg);
+    }
+    15% {
+        transform: scale(1.75) rotate(-10deg);
+    }
+    20% {
+        transform: scale(2) rotate(0);
+    }
+    100% {
+        transform: scale(20) translate3D(-1000vw, 0vh, 0) rotate(0);
+    }
+}

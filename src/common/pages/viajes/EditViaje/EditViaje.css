@@ -1,0 +1,37 @@
+.form_container{
+    width: 30%;
+}
+
+@media screen and ( max-width: 1000px ){
+    .form_container {
+        width: 45%;
+    }
+
+}
+
+@media screen and ( max-width: 700px){
+    .form_container {
+        width: 65%;
+    }
+    
+}
+
+.buttons button:nth-child(1){
+    border:1px solid #8E24AA !important;
+    color:#8E24AA;
+    height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+    border:1px solid #8E24AA !important;
+    color:#fff;
+    height:40px;
+    background-color:#8E24AA;
+}
+
+.buttons button:nth-child(2){
+    border:1px solid #8E24AA !important;
+    background-color:#8E24AA;
+    color:#fff;
+     height:40px;
+}

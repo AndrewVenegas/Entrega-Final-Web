@@ -1,0 +1,54 @@
+
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50xp;
+}
+
+.horario{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.buscadores {
+     display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.buscadores input{
+    align-self: center;
+
+}
+.turno_busqueda-container{
+    display: flex;
+    width: 200px;
+    height: 180px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.button-filtrar{
+  background-color: #7fafd9; /* Cambia el color de fondo del botón */
+  border: 2px solid #7fafd9; /* Cambia el color del borde del botón */
+  border-radius: 5px; /* Hace que el botón sea redondeado */
+  color: #ffffff; /* Cambia el color del texto del botón */
+  padding: 5px ; /* Ajusta el espaciado interno del botón según sea necesario */
+  font-size: 14px; /* Cambia el tamaño del texto del botón */
+  font-weight: bold; 
+  display: block; /* Hacer que el botón sea un elemento de bloque */
+  margin: 0 auto; 
+}
+
+/* Estilo cuando el mouse pasa por encima del botón */
+.button-filtrar:hover {
+background-color: #3a84c5;
+}

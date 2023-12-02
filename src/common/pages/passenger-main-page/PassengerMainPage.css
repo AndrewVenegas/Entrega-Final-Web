@@ -1,0 +1,13 @@
+
+.tablero {
+    display: table;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.tablero-row {
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual ancho */
+    gap: 16px;
+}

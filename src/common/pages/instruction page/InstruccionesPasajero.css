@@ -1,0 +1,39 @@
+.instrucciones-pasajero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.titulo-instrucciones {
+  color: #000000;
+  text-shadow: 1px 1px 1px grey;
+  font-size: 35px;
+  display: flex;
+}
+
+.item-pasajero {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 500px;
+  background-color: rgb(224, 232, 248);
+  /* background-color: #fff; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mensaje-final{
+  color: #000000;
+  text-shadow: 1px 1px 1px grey;
+  font-size: 20px;
+  display: flex;
+}

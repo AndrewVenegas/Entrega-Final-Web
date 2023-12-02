@@ -1,0 +1,69 @@
+
+#contenedor-botones1 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.boton-custom {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0.5em 0.5em;
+  background: #16ff;
+  border: 2px solid #16ff;
+  border-color:  #16ff;
+  /* border: 2px solid #3166ac; */
+  /* border-color: #318aac; */
+  position: relative;
+}
+.boton-custom:hover {
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgb(43, 41, 201);
+  transition: all 0.2s ease;
+}
+.disabled-button {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Animación de salida (barrido hacia la izquierda) */
+  @keyframes slideOutLeft {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  /* Agregar una transición suave para las propiedades de transformación y opacidad */
+  .transition {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  /* Aplicar la animación de entrada cuando se agrega la clase 'slide-in' */
+  .slide-in {
+    animation: slideInRight 0.5s ease both;
+  }
+  
+  /* Aplicar la animación de salida cuando se agrega la clase 'slide-out' */
+  .slide-out {
+    animation: slideOutLeft 0.5s ease both;
+  }
+

@@ -1,0 +1,15 @@
+.contenedor-crear-turno{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 180px;
+    justify-content: space-between;
+    padding: 2px;
+    margin: 2px;
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgb(151, 151, 151);
+    display: table;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
